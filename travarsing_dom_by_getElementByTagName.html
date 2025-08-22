@@ -4,20 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tour_Of_DOM</title>
-   <script src="js/hello.js"></script>
+   
 </head>
 <body>
     <header>
         <h1>Header section without NO Banner</h1>
+        <h1>This is My Fruit List</h1>
         <li>Mango</li>
         <li>Apple</li>
         <li>Oragnge</li>
+        <li>WaterMelon</li>
     </header>
     <main>
 
     </main>
     <script>
-        console.log('I am from inside of the code');
+        const listItem=document.getElementsByTagName('li');
+        for(const li of listItem)
+    {
+         console.log(li.outerText);
+         console.log(li.outerHTML);
+    }
     </script>
 </body>
 </html>

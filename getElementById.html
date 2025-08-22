@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour Of Dom</title>
+    <style>
+        h1{
+            color:blue;
+        }
+        #item-tittle{
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <section>
+           <h1>Banner WithOut Any Header</h1>
+           <p>I Love Eating Food</p>
+           <ul>
+               <li>Mango</li>
+               <li>Banna</li>
+               <li>Lacci</li>
+               <li>Apple</li>
+               <li>Jack-Fruit</li>
+               <li>PainApple</li>
+           </ul>
+    </section>
+    <section>
+          <h2 id="item-tittle">Item i Love To Eat</h2>
+          <ul>
+            <li>Porota</li>
+            <li>Gril</li>
+            <li>Acar</li>
+            <li>Chaines</li>
+          </ul>
+    </section>
+    <script>
+        const item=document.getElementById('item-tittle');
+        console.log(item.innerText);
+        item.innerText='Food I Love To It';
+    </script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+console.log("i am from outside of the main code");
